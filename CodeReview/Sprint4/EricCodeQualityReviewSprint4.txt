@@ -1,0 +1,7 @@
+Author of the code review: Eric Salberg
+Date: 3/27/17
+Sprint 4
+Name of .cs file being reviewed: SonicPhysics.cs
+Author of the .cs file reviewed: Shaun Bolan
+Number of minutes for review: 10mins
+Comments: High cohesion and low coupling. Has some dead code that can be removed. Could be more readilble, the if statements could get pulled into a private method like sonicFallOffLevel() to make Update easier to read. Possibly add acceration to the class.

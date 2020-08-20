@@ -1,0 +1,10 @@
+﻿LeftIdleSonicSprite
+RightIdleSonicSprite
+LeftRunningSonicSprite
+RightRunningSonicSprite
+LeftJumpingSonicSprite
+RightJumpingSonicSprite
+LeftBallSonicSprite
+RightBallSonicSprite
+LeftFastBallSonicSprite
+RightFastBallSonicSprite

@@ -1,0 +1,7 @@
+Author of the code review: Matt Rowe
+Date of the code review: 3/27/2017
+Sprint number: 4
+Name of the .cs file being reviewed: KeyboardController.cs
+Author of the .cs file being reviewed:	Zach Sliger
+Number of minutes taken to complete the review: 5 minutes
+Specific comments on code quality: Improved greatly from earlier iterations of this class. After this class has changed, there is similar cohesion and less coupling. Still plenty of room for improvement to abstract movement commands away, and more physics into the physics class.

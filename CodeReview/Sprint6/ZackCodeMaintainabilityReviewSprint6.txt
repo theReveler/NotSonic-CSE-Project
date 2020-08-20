@@ -1,0 +1,12 @@
+Author of the code review: Zachary Sliger
+Date of the code review: 4/23/2017
+Sprint number: 6
+Name of the .cs file being reviewed: RandomLevelLoader
+Author of the .cs file being reviewed: Tre Plowman
+Specific comments on code quality: While it is readable, I think the load level method could be split into another method that just parses the objects.
+It appears cohesive and has high coupling which is not really something that can be avoided.
+
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change: 
+
+Adding in a few extra objects would be easy, however it could become confusing if many were added and the parser has to start using combinations of characters.
+Also adding in extra randomized parts of the level would be as simple as adding in another stream and changing a few numbers.

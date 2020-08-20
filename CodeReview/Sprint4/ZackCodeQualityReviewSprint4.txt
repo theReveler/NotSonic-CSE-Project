@@ -1,0 +1,14 @@
+Author of the code review: Zack Sliger
+Date of the code review: 3/27/17
+Sprint number: 4
+Name of the .cs file being reviewed: WoodenPlatform
+Author of the .cs file being reviewed: Eric Salberg
+
+Specific comments on code quality: 
+
+Everything appears to be readble and cohesive with loose coupling.
+
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change: 
+
+If diagonal directions were to be added, or fixed paths for the platform to follow, the changes would be relatively easiy to implement with the
+current implementation.

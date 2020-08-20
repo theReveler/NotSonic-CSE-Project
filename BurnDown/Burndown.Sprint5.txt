@@ -1,0 +1,1 @@
+Our workdown chart this week looks like a mountain - this is because we were working on fixing some other issues at the start of this sprint (as opposed to working on these work items). Once we reached the point we could start working on these items, our chart looks like it should with decreasing work as time goes on. 

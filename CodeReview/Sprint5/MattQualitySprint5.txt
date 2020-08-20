@@ -1,0 +1,7 @@
+Author of the code review: Matt Rowe
+Date: 4/10/17
+Sprint 5
+Name of .cs file being reviewed: AssetStorage.cs
+Author of the .cs file reviewed: Eric Salburg
+Number of minutes for review: 5 mins
+Comments: Added to the content of AssetStorage. Coupling is still okay, just different content types accessed from the same place. Cohesion still fine for purposes of initializing the files we want to access. Clean and simple for access from other files.

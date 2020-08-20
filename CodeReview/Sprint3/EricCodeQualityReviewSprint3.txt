@@ -1,0 +1,8 @@
+Author of the code review: Eric Salberg
+Date: 2/27/17
+Sprint 3
+Name of .cs file being reviewed: SonicBLockCollisionHandler.cs
+Author of the .cs file reviewed: Zack Sliger
+Number of minutes for review: 10mins
+Comments: File seems to be not maintanble by nature, has 5 dependencies (ISonic, IGameObject, IBlock, CollisionDetector, VideoMonitor). Has some Dead Code(I think it will be used later though).
+A hypothetical change: create a helper method that will take care of the VideoMonitor blocks. This will make it cleaner and easier if we decided to make a new block type(ex. FallingBlock) for the game.

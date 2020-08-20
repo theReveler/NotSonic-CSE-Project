@@ -1,0 +1,18 @@
+p
+    Author of the code review Shaun Bolan
+p
+p
+    Date of the code review 3/10
+p
+p
+    Sprint number Sprint 3
+p
+    Name of the .cs file being reviewed Cannon.cs
+p
+    Author of the .cs file being reviewed Eric Salberg
+    Number of minutes taken to complete the review ~5
+p
+    -All fields and methods are private
+    -Constructor is simple and only passes locations
+    -All methods are 1 line and easy to understand
+    -Very maintainable

@@ -1,0 +1,16 @@
+Author of the code review: Zack Sliger
+Date of the code review: 2/27/17
+Sprint number: 3
+Name of the .cs file being reviewed: Collision Detector
+Author of the .cs file being reviewed: Shaun Bolan/Tre Plowman
+
+Specific comments on code quality: 
+
+The code is readable and appears to be cohesive. 
+Of course being a collision handler means that there will be some sort of coupling that is unavoidable.
+
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change: 
+
+If we were to add in more object types, like a boss enemy, it would not be too difficult to add in.
+If classified as an IEnemy, no changes would need to be made. If it was of its own type a else if statement
+checking it would need to be added to HandleCollision and a collision handler would be needed.

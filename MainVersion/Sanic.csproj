@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7D66CDAC-09DB-4D21-958C-2A0CCC701885}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sprint0</RootNamespace>
+    <AssemblyName>Sprint0</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="EnemySpritesAndStates\Bosses\ChillPenguin.cs" />
+    <Compile Include="EnemySpritesAndStates\Bosses\ChillPenguinFallingSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Bosses\ChillPenguinFallingState.cs" />
+    <Compile Include="EnemySpritesAndStates\Bosses\ChillPenguinIdleSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Bosses\ChillPenguinIdleState.cs" />
+    <Compile Include="EnemySpritesAndStates\Bosses\ChillPenguinIntroSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Bosses\ChillPenguinIntroState.cs" />
+    <Compile Include="EnemySpritesAndStates\Bosses\ChillPenguinJumpSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Bosses\ChillPenguinJumpState.cs" />
+    <Compile Include="EnemySpritesAndStates\Bosses\ChillPenguinSlidingSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Bosses\ChillPenguinSlidingState.cs" />
+    <Compile Include="EnemySpritesAndStates\Bosses\ChillPenguinWaitState.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\BackgroundTerrain.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\BackgroundTerrainSprite.cs" />
+    <Compile Include="GameInterfaces\IBoss.cs" />
+    <Compile Include="GameInterfaces\IBossSprite.cs" />
+    <Compile Include="GameInterfaces\IBossState.cs" />
+    <Compile Include="GameInterfaces\IDeadEnemyState.cs" />
+    <Compile Include="GameInterfaces\IPlayState.cs" />
+    <Compile Include="GameStates\EndState.cs" />
+    <Compile Include="GameStates\MainMenu.cs" />
+    <Compile Include="GameStates\Credits.cs" />
+    <Compile Include="Level\RandomLevel.cs" />
+    <Compile Include="Level\RandomLevelLoader.cs" />
+    <Compile Include="GameStates\LoseState.cs" />
+    <Compile Include="GameInterfaces\IGameState.cs" />
+    <Compile Include="GameUtility.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="HUD.cs" />
+    <Compile Include="Camera.cs" />
+    <Compile Include="CollisionHandling\ItemBlockCollisionHandler.cs" />
+    <Compile Include="CollisionHandling\CollisionDetector.cs" />
+    <Compile Include="CollisionHandling\EnemyBlockCollisionHandler.cs" />
+    <Compile Include="CollisionHandling\ICollision.cs" />
+    <Compile Include="CollisionHandling\ProjectileBlockCollisionHandler.cs" />
+    <Compile Include="CollisionHandling\SonicProjectileCollisionHandler.cs" />
+    <Compile Include="CollisionHandling\SonicSpikeCollisionHandler.cs" />
+    <Compile Include="CollisionHandling\SonicSpringCollisionHandler.cs" />
+    <Compile Include="CollisionHandling\SonicBlockCollisionHandler.cs" />
+    <Compile Include="CollisionHandling\SonicEnemyCollisionHandler.cs" />
+    <Compile Include="CollisionHandling\SonicItemCollisionHandler.cs" />
+    <Compile Include="Directions.cs" />
+    <Compile Include="EnemySpritesAndStates\BlueJaySprite.cs" />
+    <Compile Include="EnemySpritesAndStates\BunnySprite.cs" />
+    <Compile Include="EnemySpritesAndStates\BuzzBomber\BuzzBomberLeftProjectile.cs" />
+    <Compile Include="EnemySpritesAndStates\BuzzBomber\BuzzBomberRightProjectile.cs" />
+    <Compile Include="EnemySpritesAndStates\BuzzBomber\LeftIdleBuzzBomberState.cs" />
+    <Compile Include="EnemySpritesAndStates\BuzzBomber\LeftIdleBuzzBomberSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\BuzzBomber\RightIdleBuzzBomberSpirte.cs" />
+    <Compile Include="EnemySpritesAndStates\BuzzBomber\RightIdleBuzzBomberState.cs" />
+    <Compile Include="EnemySpritesAndStates\Cannon\Cannon.cs" />
+    <Compile Include="EnemySpritesAndStates\Cannon\CannonLeftProjectile.cs" />
+    <Compile Include="EnemySpritesAndStates\Cannon\CannonRightProjectile.cs" />
+    <Compile Include="EnemySpritesAndStates\Cannon\LeftAttackCannonState.cs" />
+    <Compile Include="EnemySpritesAndStates\Cannon\LeftAttackCannonSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Cannon\LeftDeadCannonSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Cannon\LeftDeadCannonState.cs" />
+    <Compile Include="EnemySpritesAndStates\Cannon\LeftIdleCannonSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Cannon\LeftIdleCannonState.cs" />
+    <Compile Include="EnemySpritesAndStates\Cannon\RightAttackCannonSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Cannon\RightAttackCannonState.cs" />
+    <Compile Include="EnemySpritesAndStates\Cannon\RightDeadCannonSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Cannon\RightDeadCannonState.cs" />
+    <Compile Include="EnemySpritesAndStates\Cannon\RightIdleCannonSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Cannon\RightIdleCannonState.cs" />
+    <Compile Include="EnemySpritesAndStates\ChickenSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Chopper\Chopper.cs" />
+    <Compile Include="EnemySpritesAndStates\Chopper\DeadChopperSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Chopper\DeadChopperState.cs" />
+    <Compile Include="EnemySpritesAndStates\Chopper\LeftFacingJumpingChopperSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Chopper\LeftFacingJumpingChopperState.cs" />
+    <Compile Include="EnemySpritesAndStates\Chopper\RightFacingJumpingChopperSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Chopper\RightFacingJumpingChopperState.cs" />
+    <Compile Include="EnemySpritesAndStates\Crabmeat\AttackCrabmeatSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Crabmeat\AttackCrabmeatState.cs" />
+    <Compile Include="EnemySpritesAndStates\BuzzBomber\BuzzBomber.cs" />
+    <Compile Include="EnemySpritesAndStates\BuzzBomber\DeadBuzzBomberSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\BuzzBomber\DeadBuzzBomberState.cs" />
+    <Compile Include="EnemySpritesAndStates\BuzzBomber\LeftFacingAttackBuzzBomberSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\BuzzBomber\LeftFacingAttackBuzzBomberState.cs" />
+    <Compile Include="EnemySpritesAndStates\BuzzBomber\LeftMovingBuzzBomberSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\BuzzBomber\LeftMovingBuzzBomberState.cs" />
+    <Compile Include="EnemySpritesAndStates\BuzzBomber\RightFacingAttackBuzzBomberSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\BuzzBomber\RightFacingAttackBuzzBomberState.cs" />
+    <Compile Include="EnemySpritesAndStates\BuzzBomber\RightMovingBuzzBomberSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\BuzzBomber\RightMovingBuzzBomberState.cs" />
+    <Compile Include="EnemySpritesAndStates\Crabmeat\Crabmeat.cs" />
+    <Compile Include="EnemySpritesAndStates\Crabmeat\CrabmeatLeftProjectile.cs" />
+    <Compile Include="EnemySpritesAndStates\EnemyUtility.cs" />
+    <Compile Include="EnemySpritesAndStates\RedProjectileSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Crabmeat\CrabmeatRightProjectile.cs" />
+    <Compile Include="EnemySpritesAndStates\Crabmeat\DeadCrabmeatSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Crabmeat\DeadCrabmeatState.cs" />
+    <Compile Include="EnemySpritesAndStates\Crabmeat\IdleAfterMovingCrabmeatState.cs" />
+    <Compile Include="EnemySpritesAndStates\Crabmeat\IdleCrabmeatSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Crabmeat\IdleAfterAttackingCrabmeatState.cs" />
+    <Compile Include="EnemySpritesAndStates\Crabmeat\LeftMovingCrabMeatSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Crabmeat\LeftMovingCrabmeatState.cs" />
+    <Compile Include="EnemySpritesAndStates\Crabmeat\RightMovingCrabmeatSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\Crabmeat\RightMovingCrabmeatState.cs" />
+    <Compile Include="EnemySpritesAndStates\ExplosionSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\MotoBug\DeadMotoBugSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\MotoBug\DeadMotoBugState.cs" />
+    <Compile Include="EnemySpritesAndStates\MotoBug\LeftMovingMotoBugSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\MotoBug\LeftMovingMotoBugState.cs" />
+    <Compile Include="EnemySpritesAndStates\MotoBug\MotoBug.cs" />
+    <Compile Include="EnemySpritesAndStates\MotoBug\RightMovingMotoBugSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\MotoBug\RightMovingMotoBugState.cs" />
+    <Compile Include="EnemySpritesAndStates\SealSprite.cs" />
+    <Compile Include="EnemySpritesAndStates\YellowProjectileSprite.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\BlockUtility.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\DestroyedVideoMonitorSprite.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\HorizontalSpikeSprite.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Platforms\DownMovingWoodenPlatformState.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Platforms\NonMovingWoodenPlatformState.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Platforms\RightMovingWoodenPlatformState.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Platforms\UpMovingWoodenPlatformState.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Springs\PressedHorizontalRedSpringSprite.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Springs\PressedHorizontalRedSpringState.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Springs\PressedHorizontalYellowSpringSprite.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Springs\PressedHorizontalYellowSpringState.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Springs\PressedVerticalRedSpringSprite.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Springs\PressedVerticalRedSpringState.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Springs\PressedVerticalYellowSpringSprite.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Springs\PressedVerticalYellowSpringState.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Spike.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\SimpleTerrain.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Springs\Spring.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\UndergroundBlock.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\UndergroundBlockSprite.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Springs\UnpressedHorizontalRedSpringSprite.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Springs\UnpressedHorizontalRedSpringState.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Springs\UnpressedHorizontalYellowSpringSprite.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Springs\UnpressedHorizontalYellowSpringState.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Springs\UnpressedVerticalRedSpringSprite.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Springs\UnpressedVerticalRedSpringState.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\SimpleTerrainSprite.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Springs\UnpressedVerticalYellowSpringSprite.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Springs\UnpressedVerticalYellowSpringState.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\VerticalSpikeSprite.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\VideoMonitor.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\VideoMonitorSprite.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\WoodBlock.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\WoodBlockSprite.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Platforms\WoodenPlatform.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Platforms\LeftMovingWoodenPlatformState.cs" />
+    <Compile Include="EnvironmentSpritesAndStates\Platforms\WoodenPlatformSprite.cs" />
+    <Compile Include="GameInterfaces\IEnemySprite.cs" />
+    <Compile Include="GameInterfaces\IHUD.cs" />
+    <Compile Include="GameInterfaces\IPhysics.cs" />
+    <Compile Include="GameInterfaces\IPlatform.cs" />
+    <Compile Include="GameInterfaces\IPlatformSprite.cs" />
+    <Compile Include="GameInterfaces\IPlatformState.cs" />
+    <Compile Include="GameInterfaces\IProjectile.cs" />
+    <Compile Include="GameInterfaces\IRing.cs" />
+    <Compile Include="GameInterfaces\ISonic.cs" />
+    <Compile Include="GameInterfaces\ISpike.cs" />
+    <Compile Include="GameInterfaces\ISpring.cs" />
+    <Compile Include="GameInterfaces\IGameObject.cs" />
+    <Compile Include="ItemSpritesAndStates\DroppedRing.cs" />
+    <Compile Include="ItemSpritesAndStates\EndRing.cs" />
+    <Compile Include="ItemSpritesAndStates\EndRingSprite.cs" />
+    <Compile Include="ItemSpritesAndStates\InvincibleItem.cs" />
+    <Compile Include="ItemSpritesAndStates\InvincibleItemSprite.cs" />
+    <Compile Include="ItemSpritesAndStates\InvincibleSprite.cs" />
+    <Compile Include="ItemSpritesAndStates\ItemUtility.cs" />
+    <Compile Include="ItemSpritesAndStates\OneUpItem.cs" />
+    <Compile Include="ItemSpritesAndStates\OneUpItemSprite.cs" />
+    <Compile Include="ItemSpritesAndStates\PickedUpEndRingSprite.cs" />
+    <Compile Include="ItemSpritesAndStates\PickedUpRingSprite.cs" />
+    <Compile Include="ItemSpritesAndStates\PowerSneakersItem.cs" />
+    <Compile Include="ItemSpritesAndStates\PowerSneakersItemSprite.cs" />
+    <Compile Include="ItemSpritesAndStates\Ring.cs" />
+    <Compile Include="ItemSpritesAndStates\RingSprite.cs" />
+    <Compile Include="ItemSpritesAndStates\ShieldItem.cs" />
+    <Compile Include="ItemSpritesAndStates\ShieldItemSprite.cs" />
+    <Compile Include="ItemSpritesAndStates\ShieldSprite.cs" />
+    <Compile Include="ItemSpritesAndStates\SuperRingItem.cs" />
+    <Compile Include="ItemSpritesAndStates\SuperRingItemSprite.cs" />
+    <Compile Include="InputActions.cs" />
+    <Compile Include="Level\Background.cs" />
+    <Compile Include="Level\OnePlayerLevel.cs" />
+    <Compile Include="Level\OnePlayerLevelLoader.cs" />
+    <Compile Include="GameStates\OnePlayerPlayState.cs" />
+    <Compile Include="GameStates\RandomPlayState.cs" />
+    <Compile Include="ScoreAndSprites\FiveHundredScoreSprite.cs" />
+    <Compile Include="ScoreAndSprites\HighScoreStorage.cs" />
+    <Compile Include="ScoreAndSprites\OneHundredScoreSprite.cs" />
+    <Compile Include="ScoreAndSprites\OneThousandScoreSprite.cs" />
+    <Compile Include="ScoreAndSprites\Score.cs" />
+    <Compile Include="ScoreAndSprites\ScoreControl.cs" />
+    <Compile Include="ScoreAndSprites\ScoreUtility.cs" />
+    <Compile Include="ScoreAndSprites\TwoHundredFiftyScoreSprite.cs" />
+    <Compile Include="GameStates\TwoPlayerPlayState.cs" />
+    <Compile Include="GameStates\PauseState.cs" />
+    <Compile Include="Sonic.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="GamepadController.cs" />
+    <Compile Include="GameInterfaces\IBlock.cs" />
+    <Compile Include="GameInterfaces\IController.cs" />
+    <Compile Include="GameInterfaces\IEnemy.cs" />
+    <Compile Include="GameInterfaces\IEnemyState.cs" />
+    <Compile Include="GameInterfaces\IItem.cs" />
+    <Compile Include="GameInterfaces\ISpringState.cs" />
+    <Compile Include="GameInterfaces\ISprite.cs" />
+    <Compile Include="GameInterfaces\IState.cs" />
+    <Compile Include="GameInterfaces\ISonicState.cs" />
+    <Compile Include="KeyboardController.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SonicPhysics.cs" />
+    <Compile Include="SonicSpritesAndStates\DeadSonicSprite.cs" />
+    <Compile Include="SonicSpritesAndStates\DeadSonicState.cs" />
+    <Compile Include="SonicSpritesAndStates\LeftBallSonicSprite.cs" />
+    <Compile Include="SonicSpritesAndStates\LeftBallSonicState.cs" />
+    <Compile Include="SonicSpritesAndStates\LeftFastBallSonicSprite.cs" />
+    <Compile Include="SonicSpritesAndStates\LeftFastBallSonicState.cs" />
+    <Compile Include="SonicSpritesAndStates\LeftIdleSonicSprite.cs" />
+    <Compile Include="SonicSpritesAndStates\LeftIdleSonicState.cs" />
+    <Compile Include="SonicSpritesAndStates\LeftJumpingSonicSprite.cs" />
+    <Compile Include="SonicSpritesAndStates\LeftJumpingSonicState.cs" />
+    <Compile Include="SonicSpritesAndStates\LeftRunningFastSonicSprite.cs" />
+    <Compile Include="SonicSpritesAndStates\LeftRunningFastSonicState.cs" />
+    <Compile Include="SonicSpritesAndStates\LeftRunningSonicSprite.cs" />
+    <Compile Include="SonicSpritesAndStates\LeftRunningSonicState.cs" />
+    <Compile Include="SonicSpritesAndStates\LeftSpringJumpingSonicSprite.cs" />
+    <Compile Include="SonicSpritesAndStates\LeftSpringJumpingSonicState.cs" />
+    <Compile Include="SonicSpritesAndStates\LeftStunnedSonicSprite.cs" />
+    <Compile Include="SonicSpritesAndStates\LeftStunnedSonicState.cs" />
+    <Compile Include="SonicSpritesAndStates\RightBallSonicSprite.cs" />
+    <Compile Include="SonicSpritesAndStates\RightBallSonicState.cs" />
+    <Compile Include="SonicSpritesAndStates\RightFastBallSonicSprite.cs" />
+    <Compile Include="SonicSpritesAndStates\RightFastBallSonicState.cs" />
+    <Compile Include="SonicSpritesAndStates\RightIdleSonicSprite.cs" />
+    <Compile Include="SonicSpritesAndStates\RightIdleSonicState.cs" />
+    <Compile Include="SonicSpritesAndStates\RightJumpingSonicSprite.cs" />
+    <Compile Include="SonicSpritesAndStates\RightJumpingSonicState.cs" />
+    <Compile Include="SonicSpritesAndStates\RightRunningSonicSprite.cs" />
+    <Compile Include="SonicSpritesAndStates\RightRunningSonicState.cs" />
+    <Compile Include="AssetStorage.cs" />
+    <Compile Include="SonicSpritesAndStates\RightSpringJumpingSonicSprite.cs" />
+    <Compile Include="SonicSpritesAndStates\RightSpringJumpingSonicState.cs" />
+    <Compile Include="SonicSpritesAndStates\RightStunnedSonicSprite.cs" />
+    <Compile Include="SonicSpritesAndStates\RightStunnedSonicState.cs" />
+    <Compile Include="SonicSpritesAndStates\SonicUtility.cs" />
+    <Compile Include="GameStates\TitleScreen.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AllDifferentSprites.txt" />
+    <Content Include="AllDifferentStates.txt" />
+    <Content Include="Content\background.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\background3.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\BackgroundAssets.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\BlockSheet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\characters.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\enemies.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\FracturedHills.jpg" />
+    <Content Include="Content\items-objects.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\mmx1chillpenguin.png" />
+    <Content Include="Content\more_terrain.png" />
+    <Content Include="Content\sonic-11.png" />
+    <Content Include="Content\Sound\1Up.wav" />
+    <Content Include="Content\Sound\EscapeFromTheCity.mp3" />
+    <Content Include="Content\sonicTitleScreen.png" />
+    <Content Include="Content\Sound\BounceOffEnemy.wav" />
+    <Content Include="Content\Sound\CheckPoint.wav" />
+    <Content Include="Content\Sound\Coin.wav" />
+    <Content Include="Content\Sound\DropCoins.wav" />
+    <Content Include="Content\Sound\Invincible.mp3" />
+    <Content Include="Content\Sound\Jumping.wav" />
+    <Content Include="Content\Sound\SpringJump.wav" />
+    <Content Include="Content\terrain.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\CollisionTesting.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\noodle14.spritefont" />
+    <None Include="Content\leveltest.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\noodle32.spritefont" />
+    <None Include="Content\random2.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\random3.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\randomFinish.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\randomStart.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\Random\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,9 @@
+Author of the code review: Brennan Plowman
+Date of the code review: 4.10
+Sprint number: 5
+Name of the .cs file being reviewed: sonicUtility
+Author of the .cs file being reviewed: Eric
+Specific comments on code quality: Straightforward, holds the magic numbers. High cohesion 
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change: 
+
+Adding more numbers to be used elsewhere - very easy to add within this utility class.

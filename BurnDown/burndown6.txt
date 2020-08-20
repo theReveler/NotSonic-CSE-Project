@@ -1,0 +1,3 @@
+Sprint 6 : NotSonic
+
+For sprint 6, our burndown looks almost oppisite of what we want, however we're aware that we have issues with the work distrubiton this time around. We spent majority of our time refactoring and catching up on our code debt so we could implement new things; as well as polishing up menus and working on sidde projects that we didn't have added to the work board. Add in the fact that we all have papers and finals we are working on too, and this was the roughest sprint (at least on paper!) However, We've made big improvements since the last sprint, and it shows in the presentation of not sonic.

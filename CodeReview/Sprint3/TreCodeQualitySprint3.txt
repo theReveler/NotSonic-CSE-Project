@@ -1,0 +1,9 @@
+Author of the code review: Brennan Plowman
+Date of the code review: 2.27.17
+Sprint number: 3
+Name of the .cs file being reviewed: sonic.cs
+Author of the .cs file being reviewed: Shaun Bolan
+
+Specific comments on code quality: contains a lot of different methods - although bound to being states of sonic, perhaps can move them into other classes to shorten the class.
+
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change: Adding any other states of sonic ie: invincibility would be easy to follow as the model is already setup, although the length is a bit much.

@@ -1,0 +1,7 @@
+Author of the code review: Eric Salberg
+Date: 4/5/17
+Sprint 5
+Name of .cs file being reviewed: HUD.cs
+Author of the .cs file reviewed: Shaun Bolan
+Number of minutes for review: 5mins
+Comments:  High is cohesion and low is coupling. Maybe add a Ihud interface that way we can create more unique HUDs if needed. 

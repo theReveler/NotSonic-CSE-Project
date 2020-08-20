@@ -1,0 +1,10 @@
+Author of the code review Shaun Bolan
+Date of the code review 4/10
+Sprint number Sprint 5
+Name of the .cs file being reviewed GameUtility
+Author of the .cs file being reviewed Eric Salberg
+Number of minutes taken to complete the review ~5
+    -All fields and methods are public whch could cause coupling issues
+    -All methods are 1 line and easy to understand
+    -The class itself is maintainable and it also makes changing the magic numbers
+     in the other classes easier increasing maintainability.

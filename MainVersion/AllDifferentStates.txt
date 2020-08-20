@@ -1,0 +1,10 @@
+﻿LeftIdleSonicState
+RightIdleSonicState
+LeftRunningSonicState
+RightRunningSonicState
+LeftJumpingSonicState
+RightJumpingSonicState
+LeftBallSonicState
+RightBallSonicState
+LeftFastBallSonicState
+RightFastBallSonicState

@@ -1,0 +1,7 @@
+Author of the code review: Brennan Plowman
+Date of the code review: 4.23
+Sprint number: 6
+Name of the .cs file being reviewed : MainMenu.cs
+Author of the .cs file being reviewed: Matt Rowe
+Specific comments on code quality :  Very clean. Only recomendation would be to move magic numbers into utility file.
+A hypothetical change: Adding other menu options is super easy, only two lines needed!

@@ -1,0 +1,9 @@
+Author of the code review: Zachary Sliger
+Date of the code review: 4/10/2017
+Sprint number: 5
+Name of the .cs file being reviewed: HUD
+Author of the .cs file being reviewed: Shaun Bolan
+Specific comments on code quality: Readable, high cohesion and low coupling
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change: 
+
+If more items were to added to the HUD (item timer, enemies defeated) it would be easiy to implement(few lines of code).

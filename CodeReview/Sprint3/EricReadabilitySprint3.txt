@@ -1,0 +1,7 @@
+Author of the code review: Eric Salberg
+Date: 22/22/17
+Sprint 3
+Name of .cs file being reviewed: SonicItemCollisionHandler.cs
+Author of the .cs file reviewed: Zack Sliger
+Number of minutes for review: 10mins
+Comments: This file is very readable. It is easy to tell what is going on.

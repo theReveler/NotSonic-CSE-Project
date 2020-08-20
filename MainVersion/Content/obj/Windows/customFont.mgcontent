@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/customFont.spritefont</SourceFile>
+  <SourceTime>2017-04-05T21:37:22.5338667-04:00</SourceTime>
+  <DestFile>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/bin/Windows/customFont.xnb</DestFile>
+  <DestTime>2017-04-05T21:37:40.5688728-04:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2016-03-30T02:36:08-04:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2016-03-30T02:36:08-04:00</ProcessorTime>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

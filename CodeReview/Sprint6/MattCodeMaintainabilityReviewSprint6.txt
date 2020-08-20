@@ -1,0 +1,7 @@
+Author of the code review: Matt Rowe
+Date of the code review: 4/24/2017
+Sprint number: 6
+Name of the .cs file being reviewed: RandomLevelLoader
+Author of the .cs file being reviewed: Tre Plowman
+Specific comments on code quality: Fairly decent structure. Cohesion/Coupling are very much like that of our previous standard level.
+A great improvement would be to use seeding and more abstraction for procedural generation.

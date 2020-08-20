@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/characters.gif</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/items-objects.png</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/enemies.png</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/terrain.png</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/BackgroundAssets.png</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/more_terrain.png</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/Sound/EscapeFromTheCity.mp3</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/Sound/Coin.wav</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/Sound/BounceOffEnemy.wav</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/Sound/CheckPoint.wav</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/Sound/DropCoins.wav</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/Sound/Jumping.wav</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/Sound/SpringJump.wav</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/Sound/Invincible.mp3</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/Sound/1Up.wav</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/sonic-11.png</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/sonicTitleScreen.png</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/mmx1chillpenguin.png</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/noodle14.spritefont</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/noodle32.spritefont</File>
+    <File>C:/Users/Rowe/Source/Workspaces/NotSonic/MainVersion/Content/FracturedHills.jpg</File>
+  </SourceFiles>
+</SourceFileCollection>

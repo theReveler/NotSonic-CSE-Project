@@ -1,0 +1,7 @@
+Author of the code review: Eric Salberg
+Date: 4/10/17
+Sprint 5
+Name of .cs file being reviewed: Sonic.cs
+Author of the .cs file reviewed: Shaun Bolan
+Number of minutes for review: 10mins
+Comments: Has a ton of Fields/Properties which isn't necessarily bad, how ever it's probably not the best way to do the class. Cohesion is pretty high, most of the methods are only doing one thing (only method that isn't is Update which is also updating a physics class). Coupling is pretty high, the class has about 6 or 7 dependencies. GetPowerSneaker() method should actually do something when a PowerSneaker item is picked up. Also Stun method should do something (maybe sonic loses all his rings and goes inviscible for a short period of time). Maybe have the lives and rings in this Sonic class instead of the HUD, that way it might be easier to add multiple player classes.
