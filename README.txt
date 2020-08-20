@@ -1,3 +1,7 @@
+** Updates for 8/20/20 ** 
+Some of the original features of the game seem to have broken, but that's unfortunate. Please use command prompt to close application, or the song will continue to loop.
+Playable game: \NotSonic\MainVersion\bin\Windows\x86\Debug\Sprint0.exe
+
 ****** Warning You need to install the BigNoodlesTooOblique Font in the top folder of NotSonic, if not installed, an error will occur.  *****
 
 Sonic Controls:
